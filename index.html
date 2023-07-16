@@ -22,11 +22,11 @@
     />
     <meta name="viewport" content="width=device-width" />
     
-		<link rel="modulepreload" href="_app/immutable/entry/start.cf6c3815.js">
-		<link rel="modulepreload" href="_app/immutable/chunks/index.ba96b1a0.js">
-		<link rel="modulepreload" href="_app/immutable/chunks/singletons.acaaf370.js">
-		<link rel="modulepreload" href="_app/immutable/chunks/index.7041b2e4.js">
-		<link rel="modulepreload" href="_app/immutable/entry/app.d8e18858.js">
+		<link rel="modulepreload" href="app/immutable/entry/start.cf6c3815.js">
+		<link rel="modulepreload" href="app/immutable/chunks/index.ba96b1a0.js">
+		<link rel="modulepreload" href="app/immutable/chunks/singletons.acaaf370.js">
+		<link rel="modulepreload" href="app/immutable/chunks/index.7041b2e4.js">
+		<link rel="modulepreload" href="app/immutable/entry/app.d8e18858.js">
   </head>
   <body>
     <div>
@@ -39,9 +39,9 @@
 
 					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("/_app/immutable/entry/start.cf6c3815.js"),
-						import("/_app/immutable/entry/app.d8e18858.js")
+					Promise?.all([
+						import("app/immutable/entry/start.cf6c3815.js"),
+						import("app/immutable/entry/app.d8e18858.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
