@@ -1533,6 +1533,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
     grid-template-columns: 1fr 3fr 1fr;
   }
 
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .md\:gap-4 {
     gap: 1rem;
   }
