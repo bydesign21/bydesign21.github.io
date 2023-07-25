@@ -533,6 +533,9 @@ video {
 .relative {
   position: relative;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .block {
   display: block;
 }
@@ -1512,6 +1515,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 [data-aos="flip-down"].aos-animate {
   transform: perspective(2500px) rotateX(0);
 }
+
+.kitchen-toast.mdc-snackbar__surface {
+  background-color: blue !important;
+}
+
 @media (min-width: 640px) {
 
   .sm\:flex-auto {
@@ -1522,6 +1530,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
     flex-direction: column;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:grid {
