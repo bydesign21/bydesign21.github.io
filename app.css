@@ -527,6 +527,9 @@ video {
 .static {
   position: static;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -566,6 +569,9 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.border {
+  border-width: 1px;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -596,6 +602,9 @@ video {
 }
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+.outline {
+  outline-style: solid;
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
