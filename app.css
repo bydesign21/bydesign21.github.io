@@ -536,6 +536,12 @@ video {
 .relative {
   position: relative;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -551,8 +557,14 @@ video {
 .flex-auto {
   flex: 1 1 auto;
 }
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -560,11 +572,17 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.items-center {
+  align-items: center;
+}
 .justify-start {
   justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -589,6 +607,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1582,5 +1603,9 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 }
