@@ -536,6 +536,12 @@ video {
 .relative {
   position: relative;
 }
+.left-0 {
+  left: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -563,6 +569,12 @@ video {
 }
 .mt-5 {
   margin-top: 1.25rem;
+}
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 .block {
   display: block;
@@ -651,6 +663,11 @@ video {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .rounded-full {
   border-radius: 9999px;
