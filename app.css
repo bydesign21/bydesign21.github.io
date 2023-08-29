@@ -542,6 +542,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.z-10 {
+  z-index: 10;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -692,6 +695,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .p-2 {
   padding: 0.5rem;
