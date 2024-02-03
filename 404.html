@@ -8,6 +8,28 @@
   </head>
   <body></body>
   <script>
-    window.location.href = "/" + window.location.pathname;
+    const path = window.location.pathname;
+    const href = window.location.href;
+    if (path !== "/") {
+      window.location.href = "/#" + path;
+    }
+    if (href.endsWith("/")) {
+      window.location.href = href.substring(0, href.length - 1);
+    }
+    if (href.endsWith("#")) {
+      window.location.href = href.substring(0, href.length - 1);
+    }
+    if (href.endsWith("/#")) {
+      window.location.href = href.substring(0, href.length - 2);
+    }
+    if (href.endsWith("/#404")) {
+      window.location.href = href.substring(0, href.length - 4);
+    }
+    if (href.endsWith("/#404/")) {
+      window.location.href = href.substring(0, href.length - 5);
+    }
+    if (href.endsWith("/#404.html")) {
+      window.location = href.substring(0, href.length - 10);
+    }
   </script>
 </html>
