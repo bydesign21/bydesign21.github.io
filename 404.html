@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
-      sessionStorage.redirect = location.href;
+      setTimeout(() => {
+        sessionStorage.redirect = location.href;
+      });
     </script>
     <meta http-equiv="refresh" content="0;URL='/'" />
     <title>Lvasquez.dev</title>
@@ -13,12 +15,13 @@
   <body></body>
   <script>
     (function () {
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-        console.log("Redirecting to", redirect);
-      }
+      setTimeout(() => {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      });
     })();
   </script>
 </html>
