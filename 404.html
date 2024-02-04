@@ -4,14 +4,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      const pathname = window.location.pathname || "/";
+      sessionStorage.redirect = pathname;
+      console.log("Redirecting to href =>", pathname);
+      window.location.href = pathname;
+    </script>
     <title>Lvasquez.dev</title>
   </head>
   <body></body>
-  <script>
-    const href = `/#${window.location.pathname}`;
-    const pathname = window.location.pathname;
-    sessionStorage.redirect = pathname;
-    console.log("Redirecting to href =>", href);
-    window.location.href = href;
-  </script>
 </html>
