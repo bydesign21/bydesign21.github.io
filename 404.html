@@ -9,6 +9,7 @@
       var redirect = sessionStorage.redirect;
       console.log("404 redirect", redirect);
     </script>
+    <meta http-equiv="refresh" content="0;URL='/'" />
     <title>Lvasquez.dev</title>
   </head>
   <body></body>
@@ -17,10 +18,8 @@
       var redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       if (redirect && redirect != location.href) {
+        console.log("Redirecting to", redirect);
         history.replaceState(null, null, redirect);
-        // redirect to the original page
-        window.location.href = redirect;
-        console.log("404 redirecting", redirect);
       }
     })();
   </script>
