@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
       sessionStorage.redirect = location.href;
-      var redirect = sessionStorage.redirect;
-      console.log("404 redirect", redirect);
     </script>
     <meta http-equiv="refresh" content="0;URL='/'" />
     <title>Lvasquez.dev</title>
@@ -18,8 +16,8 @@
       var redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       if (redirect && redirect != location.href) {
-        console.log("Redirecting to", redirect);
         history.replaceState(null, null, redirect);
+        console.log("Redirecting to", redirect);
       }
     })();
   </script>
