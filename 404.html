@@ -19,6 +19,9 @@
       delete sessionStorage.redirect;
       if (redirect && redirect != location.href) {
         history.replaceState(null, null, redirect);
+        // redirect to the original page
+        window.location.href = redirect;
+        console.log("404 redirecting", redirect);
       }
     })();
   </script>
